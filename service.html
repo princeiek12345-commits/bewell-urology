@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | UroCare Premier</title>
+    <meta name="description" content="Comprehensive range of specialized treatments including ED therapy, Low Libido treatment, and advanced urological surgery.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        teal: {
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        silver: {
+                            100: '#f1f5f9',
+                            400: '#94a3b8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Web Component: Navbar -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Page Header -->
+    <section class="relative pt-32 pb-20 bg-navy-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="text-teal-400 font-bold tracking-widest uppercase text-xs mb-4 block">Medical Excellence</span>
+            <h1 class="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Specialized Treatments</h1>
+            <p class="text-slate-300 max-w-3xl mx-auto text-lg">
+                We provide a full spectrum of urological and men's health services, utilizing state-of-the-art technology in a private, judgment-free environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Detail Grid -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            
+            <!-- Andrology Sub-section Header -->
+            <div class="mb-12 flex items-center gap-4">
+                <div class="h-1 w-12 bg-teal-600 rounded-full"></div>
+                <h2 class="text-2xl font-heading font-bold text-navy-900">Andrology & Men's Sexual Health</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                
+                <!-- Service 1: Erectile Dysfunction -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="zap" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Erectile Dysfunction</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            We offer advanced medical therapies for ED. From oral medications to shockwave therapy and injections, we find the solution that works for your physiology and lifestyle.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Oral Pharmacotherapy</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Shockwave Therapy</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Intracavernosal Injections</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Premature Ejaculation -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll delay-100 h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="wind" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Premature Ejaculation</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            This common condition is highly treatable. We provide behavioral techniques, medical treatments, and counseling to help you regain control and confidence.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Topical Anesthetics</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Oral Medications</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Pelvic Floor Therapy</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Prolonged Ejaculation -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="clock" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Prolonged Ejaculation</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            Also known as delayed ejaculation. Our specialists assess neurological, hormonal, and psychological factors to provide effective treatment plans for this frustrating condition.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Medication Adjustment</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Sex Therapy Referrals</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Vibratory Stimulation Therapy</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Low Libido -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll delay-100 h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="trending-down" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Low Libido</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            A decreased sex drive can stem from hormonal imbalances, stress, or medical conditions. We perform comprehensive blood panels to identify the root cause.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Testosterone Replacement (TRT)</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Hormone Optimization</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Lifestyle Counseling</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Male Infertility (New) -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="users" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Male Infertility</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            Infertility affects men equally. We provide advanced sperm analysis, varicocele repair, and hormonal treatments to improve fertility outcomes.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Semen Analysis</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Varicocele Surgery</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Hormonal Therapy</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Surgical Procedures Sub-section Header -->
+            <div class="mb-12 flex items-center gap-4 mt-12">
+                <div class="h-1 w-12 bg-teal-600 rounded-full"></div>
+                <h2 class="text-2xl font-heading font-bold text-navy-900">Specialized Surgical Procedures</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                
+                <!-- Service 6: Radical Prostatectomy -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll h-full">
+                    <div class="w-16 h-16 bg-red-900 rounded-2xl flex items-center justify-center text-white shrink-0">
+                        <i data-feather="crosshair" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Radical Prostatectomy</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            A surgical procedure for the complete removal of the prostate gland, primarily used to treat prostate cancer. Performed with precision to preserve nerve function where possible.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Robotic/Nerve-sparing Surgery</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Cancer Staging & Removal</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Continence Preservation</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 7: Prostate Enlargement (BPH) Treatments -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll delay-100 h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="box" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">BPH Prostate Procedures</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            Specialized minimally invasive surgeries for Benign Prostatic Hyperplasia (BPH). We utilize laser and resection techniques to relieve urinary obstruction.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> TURP (Transurethral Resection)</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> TUIP (Transurethral Incision)</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> HoLEP (Holmium Laser Enucleation)</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 8: Urethra & Stone Surgery -->
+                <div class="flex flex-col gap-6 p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll h-full">
+                    <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center text-teal-400 shrink-0">
+                        <i data-feather="tool" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-navy-900 mb-3">Urethral & Stone Surgery</h3>
+                        <p class="text-slate-500 mb-6 text-sm leading-relaxed">
+                            Endoscopic procedures to treat urethral strictures and break down urinary tract stones. Quick recovery times with minimal pain.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-3 mb-6">
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> DVIU (Direct Vision Internal Urethrotomy)</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Laser Lithotripsy (Stones)</li>
+                            <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-teal-600 shrink-0"></i> Ureteroscopy</li>
+                        </ul>
+                        <a href="#contact" class="text-teal-700 font-bold text-sm hover:text-teal-900 inline-flex items-center group">
+                            Start Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 9: Kidney Transplant (Renal) -->
+                <div class="flex flex-col gap-6 p-8 bg-teal-50 rounded-2xl border border-teal-100 hover:shadow-xl transition-shadow duration-300 reveal-on-scroll md:col-span-2 lg:col-span-3">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-auto shrink-0 flex justify-center">
+                            <div class="w-20 h-20 bg-teal-700 rounded-full flex items-center justify-center text-white">
+                                <i data-feather="heart" class="w-10 h-10"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-heading font-bold text-navy-900 mb-4">Renal Replacement & Kidney Transplantation</h3>
+                            <p class="text-slate-600 mb-6 max-w-4xl text-base leading-relaxed mx-auto md:mx-0">
+                                We offer comprehensive care for end-stage renal disease. Our team works with top transplant centers to guide you through the evaluation, donor compatibility testing, and the post-operative recovery process to ensure the best possible outcome.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-8 mb-6">
+                                <div class="flex items-center gap-2 text-navy-900 font-semibold">
+                                    <i data-feather="check" class="text-teal-600"></i> Pre-transplant Evaluation
+                                </div>
+                                <div class="flex items-center gap-2 text-navy-900 font-semibold">
+                                    <i data-feather="check" class="text-teal-600"></i> Donor Compatibility Testing
+                                </div>
+                                <div class="flex items-center gap-2 text-navy-900 font-semibold">
+                                    <i data-feather="check" class="text-teal-600"></i> Long-term Management
+                                </div>
+                            </div>
+                            <a href="#contact" class="inline-flex items-center px-8 py-3 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-full transition-all shadow-lg">
+                                Book Transplant Consultation <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-navy-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">Your Path to Recovery</h2>
+                <p class="text-slate-400 mt-4">Simple, confidential, and effective steps.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="relative reveal-on-scroll">
+                    <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-3">Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Book a private appointment. Discuss your symptoms with a specialist in a confidential setting.</p>
+                    <div class="hidden md:block absolute top-10 left-[60%] w-[80%] border-t-2 border-dashed border-slate-700"></div>
+                </div>
+                <div class="relative reveal-on-scroll delay-100">
+                    <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-3">Diagnosis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Undergo advanced diagnostic testing. We use on-site labs for fast, accurate results.</p>
+                    <div class="hidden md:block absolute top-10 left-[60%] w-[80%] border-t-2 border-dashed border-slate-700"></div>
+                </div>
+                <div class="reveal-on-scroll delay-200">
+                    <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-3">Treatment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Receive a personalized treatment plan. We support you throughout your recovery journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-teal-50 rounded-3xl p-8 md:p-16 text-center border border-teal-100">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">Ready to Take the Next Step?</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto mb-8">Our specialists are available for discreet consultations. Don't let hesitation delay your health.</p>
+                <a href="tel:+2348037806560" class="inline-flex items-center px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-full transition-all duration-300 shadow-lg">
+                    <i data-feather="phone" class="w-5 h-5 mr-2"></i> Call +234 (0)803 780 6560
+                </a>
+                <div class="mt-4 text-sm text-teal-700">
+                    Or book online via <a href="index.html" class="underline font-semibold">Home Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Component: Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300 hover:scale-110">
+        <i data-feather="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    
+     <!-- Footer -->
+<footer class="bg-navy-950 text-slate-400 py-16 border-t border-slate-800">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+            <!-- Column 1: Brand & Description -->
+            <div class="lg:col-span-1">
+                <h3 class="text-2xl font-serif font-bold text-white mb-4">BeWell Urology.</h3>
+                <p class="text-sm leading-relaxed mb-6">
+                    Advanced Urology & Men’s Health Care providing elite private services with total confidentiality.
+                </p>
+                <div class="flex gap-4">
+                    <a href="facebook.com" class="hover:text-teal-400 transition-colors" aria-label="Facebook">
+                        <i data-feather="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://x.com/OfficialKeneObi?s=20" class="hover:text-teal-400 transition-colors" aria-label="Twitter">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.instagram.com/keneobi?igsh=MXd2MTRuZDlxaGxnNg==" class="hover:text-teal-400 transition-colors" aria-label="Instagram">
+                        <i data-feather="instagram" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html" class="hover:text-teal-400 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-teal-400 transition-colors">About Us</a></li>
+                    <li><a href="service.html" class="hover:text-teal-400 transition-colors">Services</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 transition-colors">Book Appointment</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info (Simple & Useful) -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i data-feather="map-pin" class="w-4 h-4 mt-0.5 text-teal-400"></i>
+                        <span>Plot 554 Topmoj Luxury Home,<br>opp. Dunamis Glory Dome, Airport Road, Abuja</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-feather="phone" class="w-4 h-4 text-teal-400"></i>
+                        <a href="tel:+2348037806560" class="hover:text-teal-400 transition-colors">+234 (0)803 780 6560</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-feather="mail" class="w-4 h-4 text-teal-400"></i>
+                        <a href="mailto:bewellurologyandmensclinic@gmail.com" class="hover:text-teal-400 transition-colors">
+                            bewellurologyandmensclinic@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-slate-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 BeWell Urology & Men’s Clinic Limited. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

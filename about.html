@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BeWell Urology & Men’s Clinic Limited</title>
+    <meta name="description" content="Learn about BeWell Urology & Men’s Clinic. Our mission is to provide elite private care, total confidentiality, and advanced urological treatments.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        teal: {
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        silver: {
+                            100: '#f1f5f9',
+                            400: '#94a3b8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- Web Component: Navbar -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Page Header / Hero -->
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img
+            src="images/about.jpeg"
+            alt="BeWell Clinic"
+            class="w-full h-full object-cover"
+        >
+        <!-- Soft overlay for readability -->
+        <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-6 relative z-10 text-center">
+        <span class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm">
+            Our Story
+        </span>
+
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-8">
+            Redefining Men's Health <br>
+            <span class="text-teal-400">With Absolute Dignity</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+            We are more than a clinic; we are a sanctuary for men seeking advanced medical care in a judgment-free, strictly confidential environment.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Mission Statement -->
+    <section class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-20 reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-8">Our Mission</h2>
+                <div class="relative">
+                    <i data-feather="quote" class="w-12 h-12 text-teal-200 absolute -top-6 -left-6 -z-10 transform rotate-180"></i>
+                    <p class="text-2xl md:text-3xl font-serif text-slate-700 italic leading-normal">
+                        "To restore health and confidence by providing world-class urological care with the highest standard of privacy, ethics, and personalized attention."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Core Values Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-500/30 transition-all duration-300 hover:shadow-xl reveal-on-scroll">
+                    <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-700 mb-6">
+                        <i data-feather="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4 font-heading">Uncompromised Privacy</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        From the moment you book to the completion of your treatment, your data and identity are protected by military-grade encryption and strict non-disclosure protocols.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-500/30 transition-all duration-300 hover:shadow-xl reveal-on-scroll delay-100">
+                    <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-700 mb-6">
+                        <i data-feather="star" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4 font-heading">Clinical Excellence</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        We adhere to international medical standards, utilizing FDA-approved technology and evidence-based protocols to ensure the best outcomes.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-500/30 transition-all duration-300 hover:shadow-xl reveal-on-scroll delay-200">
+                    <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-700 mb-6">
+                        <i data-feather="heart" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4 font-heading">Holistic Care</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        We treat the whole person, not just the symptoms. Our approach considers physical, emotional, and psychological well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Split Section -->
+    <section class="py-24 bg-navy-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 reveal-on-scroll">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-teal-600 rounded-2xl transform translate-x-3 translate-y-3 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2 duration-300"></div>
+                        <img src="images/doctor1.jpeg" alt="Clinic Interior" class="rounded-2xl shadow-2xl w-full object-cover h-[400px] lg:h-[500px] grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+                <div class="lg:w-1/2 reveal-on-scroll">
+                    <span class="text-teal-400 font-bold tracking-widest uppercase text-xs">Since Establishment</span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mt-3 mb-6">A Legacy of Trusted Care</h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        BeWell Urology & Men’s Clinic Limited was founded with a singular vision: to bridge the gap in premium men's healthcare. Recognizing the discomfort many men feel in traditional hospital settings, we designed a facility that feels less like a clinic and more like a premium wellness retreat.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-8">
+                        Located at the serene Topmoj luxury home opposite the Dunamis Glory dome, our facility offers a sanctuary where men can address sensitive health issues without fear or judgment. Led by Dr. Obiatuegwu Kenechukwu, our team brings decades of combined experience in robotic surgery, endocrinology, and reproductive health.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i data-feather="check" class="text-teal-500 w-5 h-5"></i>
+                            <span class="text-slate-200">Strategic Location in Abuja</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-feather="check" class="text-teal-500 w-5 h-5"></i>
+                            <span class="text-slate-200">State-of-the-art Laser Surgery Suite</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-feather="check" class="text-teal-500 w-5 h-5"></i>
+                            <span class="text-slate-200">Dedicated Men's Health Focus</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Strip -->
+    <section class="py-16 bg-teal-700 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="reveal-on-scroll">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">2+</div>
+                    <div class="text-teal-100 text-sm uppercase tracking-wide font-medium">Years Experience</div>
+                </div>
+                <div class="reveal-on-scroll delay-100">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">5k+</div>
+                    <div class="text-teal-100 text-sm uppercase tracking-wide font-medium">Happy Patients</div>
+                </div>
+                <div class="reveal-on-scroll delay-200">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">100%</div>
+                    <div class="text-teal-100 text-sm uppercase tracking-wide font-medium">Confidentiality</div>
+                </div>
+                <div class="reveal-on-scroll delay-300">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-teal-100 text-sm uppercase tracking-wide font-medium">Support Line</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Are Different -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 max-w-3xl mx-auto reveal-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">The BeWell Difference</h2>
+                <p class="text-slate-500 leading-relaxed">We distinguish ourselves through a relentless focus on the patient experience and medical outcomes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Difference Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex gap-6 reveal-on-scroll">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-navy-50 flex items-center justify-center text-navy-700">
+                            <i data-feather="clock" class="w-6 h-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-navy-900 mb-2">No Waiting Rooms</h4>
+                        <p class="text-slate-500 text-sm">Your appointment time is respected. Private suites ensure you never wait in a public corridor.</p>
+                    </div>
+                </div>
+
+                <!-- Difference Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex gap-6 reveal-on-scroll delay-100">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-navy-50 flex items-center justify-center text-navy-700">
+                            <i data-feather="file-text" class="w-6 h-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-navy-900 mb-2">Transparent Pricing</h4>
+                        <p class="text-slate-500 text-sm">Clear, upfront costs with no hidden fees. We focus on care, not upselling.</p>
+                    </div>
+                </div>
+
+                <!-- Difference Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex gap-6 reveal-on-scroll">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-navy-50 flex items-center justify-center text-navy-700">
+                            <i data-feather="smartphone" class="w-6 h-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-navy-900 mb-2">Virtual Consultations</h4>
+                        <p class="text-slate-500 text-sm">Start your journey from the comfort of your home with secure telemedicine options.</p>
+                    </div>
+                </div>
+
+                <!-- Difference Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex gap-6 reveal-on-scroll delay-100">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-navy-50 flex items-center justify-center text-navy-700">
+                            <i data-feather="globe" class="w-6 h-6"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-navy-900 mb-2">International Standards</h4>
+                        <p class="text-slate-500 text-sm">Our protocols match top-tier clinics in London and New York.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-50 to-teal-50"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold text-navy-900 mb-6">Ready to Prioritize Your Health?</h2>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">Take the first step towards a healthier, more confident you. Our specialists are here to help.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="service.html" class="px-10 py-5 bg-navy-900 hover:bg-navy-800 text-white font-bold rounded-full transition-all duration-300 shadow-xl transform hover:-translate-y-1">
+                    Book Appointment
+                </a>
+                <a href="tel:+2348037806560" class="px-10 py-5 bg-white hover:bg-teal-50 text-teal-700 border border-teal-200 font-bold rounded-full transition-all duration-300 shadow-sm flex items-center justify-center gap-2">
+                    <i data-feather="phone" class="w-5 h-5"></i>
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+   <!-- Footer -->
+<footer class="bg-navy-950 text-slate-400 py-16 border-t border-slate-800">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+            <!-- Column 1: Brand & Description -->
+            <div class="lg:col-span-1">
+                <h3 class="text-2xl font-serif font-bold text-white mb-4">BeWell Urology.</h3>
+                <p class="text-sm leading-relaxed mb-6">
+                    Advanced Urology & Men’s Health Care providing elite private services with total confidentiality.
+                </p>
+                <div class="flex gap-4">
+                    <a href="facebook.com" class="hover:text-teal-400 transition-colors" aria-label="Facebook">
+                        <i data-feather="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://x.com/OfficialKeneObi?s=20" class="hover:text-teal-400 transition-colors" aria-label="Twitter">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.instagram.com/keneobi?igsh=MXd2MTRuZDlxaGxnNg==" class="hover:text-teal-400 transition-colors" aria-label="Instagram">
+                        <i data-feather="instagram" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html" class="hover:text-teal-400 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-teal-400 transition-colors">About Us</a></li>
+                    <li><a href="service.html" class="hover:text-teal-400 transition-colors">Services</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 transition-colors">Book Appointment</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info (Simple & Useful) -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i data-feather="map-pin" class="w-4 h-4 mt-0.5 text-teal-400"></i>
+                        <span>Plot 554 Topmoj Luxury Home,<br>opp. Dunamis Glory Dome, Airport Road, Abuja</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-feather="phone" class="w-4 h-4 text-teal-400"></i>
+                        <a href="tel:+2348037806560" class="hover:text-teal-400 transition-colors">+234 (0)803 780 6560</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-feather="mail" class="w-4 h-4 text-teal-400"></i>
+                        <a href="mailto:bewellurologyandmensclinic@gmail.com" class="hover:text-teal-400 transition-colors">
+                            bewellurologyandmensclinic@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-slate-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 BeWell Urology & Men’s Clinic Limited. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

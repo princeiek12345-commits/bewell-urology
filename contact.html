@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | BeWell Urology</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        teal: {
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        silver: {
+                            100: '#f1f5f9',
+                            400: '#94a3b8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    
+    <!-- Web Component: Navbar -->
+    <custom-navbar></custom-navbar>
+    
+    <!-- Page Header -->
+    <div class="bg-navy-900 pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-teal-800 rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-800 rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">Book Your Appointment</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                Take the first step towards better health in a safe, private, and professional environment.
+            </p>
+            <div class="mt-6 flex justify-center items-center gap-2 text-teal-400 text-sm font-medium">
+                <i data-feather="lock" class="w-4 h-4"></i>
+                <span>256-bit SSL Encrypted · 100% Confidential</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow -mt-10 relative z-20 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Left Column: Contact Info & Summary -->
+                <div class="lg:col-span-1 space-y-6">
+                    <!-- Why Choose Us Card -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 border border-slate-100">
+                        <h3 class="text-xl font-heading font-bold text-navy-900 mb-6">Why BeWell Urology?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-feather="check" class="w-3.5 h-3.5"></i>
+                                </div>
+                                <span class="text-sm text-slate-600">Discreet private entrance for VIP patients</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-feather="check" class="w-3.5 h-3.5"></i>
+                                </div>
+                                <span class="text-sm text-slate-600">Same-day lab results available</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-feather="check" class="w-3.5 h-3.5"></i>
+                                </div>
+                                <span class="text-sm text-slate-600">Direct consultations with our Chief Medical Director</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Need Help Card -->
+                    <div class="bg-navy-900 rounded-2xl shadow-lg p-8 text-white">
+                        <h3 class="text-xl font-heading font-bold text-white mb-4">Prefer to Call?</h3>
+                        <p class="text-slate-400 text-sm mb-6">Our reception team is available to assist you with booking.</p>
+                        <a href="tel:+2348037806560" class="inline-flex items-center gap-3 text-teal-400 font-bold text-lg hover:text-teal-300 transition-colors">
+                            <i data-feather="phone-call" class="w-5 h-5"></i>
+                            +234 (0)803 780 6560
+                        </a>
+                        <div class="mt-6 pt-6 border-t border-navy-800">
+                            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider mb-2">Clinic Hours</p>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-300">Mon - Fri</span>
+                                <span class="text-white">8:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between text-sm mt-2">
+                                <span class="text-slate-300">Saturday</span>
+                                <span class="text-white">9:00 - 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="lg:col-span-2">
+                    <form action="send-email.php" method="POST" id="booking-form" class="bg-white rounded-2xl shadow-xl p-6 md:p-10 border border-slate-100">
+                        <!-- ... (your full form code remains exactly the same) ... -->
+                        <!-- I'm keeping it short here for clarity – paste your existing form code inside this div -->
+
+                        <div class="mb-8 border-b border-slate-100 pb-4">
+                            <h2 class="text-2xl font-heading font-bold text-navy-900">Patient Details</h2>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">First Name <span class="text-red-500">*</span></label>
+                                <input type="text" name="first_name" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Last Name <span class="text-red-500">*</span></label>
+                                <input type="text" name="last_name" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none" placeholder="Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Email Address <span class="text-red-500">*</span></label>
+                                <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none" placeholder="+234 ...">
+                            </div>
+                        </div>
+
+                        <div class="mb-8 border-b border-slate-100 pb-4">
+                            <h2 class="text-2xl font-heading font-bold text-navy-900">Appointment Details</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Department / Service <span class="text-red-500">*</span></label>
+                                <select name="service" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none appearance-none cursor-pointer">
+                                    <option value="">Select a service</option>
+                                    <option>General Consultation</option>
+                                    <option>Erectile Dysfunction Treatment</option>
+                                    <option>Low Testosterone (TRT)</option>
+                                    <option>Prostate Health / PSA</option>
+                                    <option>Premature Ejaculation</option>
+                                    <option>Kidney Stones</option>
+                                    <option>Laser Surgery Consultation</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Preferred Date <span class="text-red-500">*</span></label>
+                                <input type="date" name="preferred_date" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-navy-900 mb-2">Preferred Time <span class="text-red-500">*</span></label>
+                                <select name="preferred_time" required class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none">
+                                    <option value="">Select time slot</option>
+                                    <option>Morning (09:00 - 12:00)</option>
+                                    <option>Afternoon (13:00 - 16:00)</option>
+                                    <option>Evening (16:00 - 18:00)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-sm font-semibold text-navy-900 mb-2">Additional Notes (Optional)</label>
+                            <textarea name="notes" rows="4" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 transition-all outline-none" placeholder="Please describe any symptoms or specific concerns..."></textarea>
+                        </div>
+
+                        <div id="form-status" class="mb-6 text-center font-medium"></div>
+
+                        <button type="submit" class="w-full py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-xl transition-all duration-300 shadow-lg transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            Confirm Booking Request
+                            <i data-feather="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                        
+                        <p class="text-xs text-center text-slate-400 mt-4">
+                            By clicking confirm, you agree to our <a href="#" class="underline hover:text-teal-400">Terms of Service</a> and <a href="#" class="underline hover:text-teal-400">Privacy Policy</a>. No payment required today.
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Embedded Google Map - Added Here (After Form, Before Footer) -->
+            <div class="mt-20">
+                <h2 class="text-3xl font-heading font-bold text-navy-900 text-center mb-8">Find Our Clinic</h2>
+                <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63057.60386049574!2d7.277498245239249!3d8.962910444997622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e711dd1fa4271%3A0x8b7af7c7197455bd!2sBeWell%20Urology%20and%20Men&#39;s%20Clinic%20Limited!5e0!3m2!1sen!2sng!4v1767814669690!5m2!1sen!2sng" 
+                        width="100%" 
+                        height="500" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="text-center text-slate-600 mt-6 text-sm">
+                    Plot 554 Topmoj Luxury Home, opposite Dunamis Glory Dome, Airport Road, Abuja
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Clean Footer (No Map Inside) -->
+    <footer class="bg-navy-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                <!-- Column 1: Brand & Description -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">BeWell Urology.</h3>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Advanced Urology & Men’s Health Care providing elite private services with total confidentiality.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://facebook.com" class="hover:text-teal-400 transition-colors" aria-label="Facebook">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://x.com/OfficialKeneObi?s=20" class="hover:text-teal-400 transition-colors" aria-label="Twitter">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/keneobi?igsh=MXd2MTRuZDlxaGxnNg==" class="hover:text-teal-400 transition-colors" aria-label="Instagram">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-teal-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-teal-400 transition-colors">About Us</a></li>
+                        <li><a href="service.html" class="hover:text-teal-400 transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-teal-400 transition-colors">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i data-feather="map-pin" class="w-4 h-4 mt-0.5 text-teal-400"></i>
+                            <span>Plot 554 Topmoj Luxury Home,<br>opp. Dunamis Glory Dome, Airport Road, Abuja</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-feather="phone" class="w-4 h-4 text-teal-400"></i>
+                            <a href="tel:+2348037806560" class="hover:text-teal-400 transition-colors">+234 (0)803 780 6560</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-feather="mail" class="w-4 h-4 text-teal-400"></i>
+                            <a href="mailto:bewellurologyandmensclinic@gmail.com" class="hover:text-teal-400 transition-colors">
+                                bewellurologyandmensclinic@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 BeWell Urology & Men’s Clinic Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const statusDiv = document.getElementById('form-status');
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending Request... <i data-feather="loader" class="w-5 h-5 animate-spin"></i>';
+            feather.replace();
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                statusDiv.innerHTML = `<span class="${data.status === 'success' ? 'text-green-600' : 'text-red-600'}">${data.message}</span>`;
+                if (data.status === 'success') {
+                    form.reset();
+                }
+            })
+            .catch(() => {
+                statusDiv.innerHTML = '<span class="text-red-600">Network error. Please try again or call us directly.</span>';
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Confirm Booking Request <i data-feather="arrow-right" class="w-5 h-5"></i>';
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>
