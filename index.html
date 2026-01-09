@@ -238,89 +238,153 @@
         </div>
     </section>
 
-<!-- Doctors / Leadership Section -->
-<section id="doctors" class="py-24 bg-white">
+<!-- MAIN SECTION: Doctors / Leadership -->
+<section id="doctors" class="py-24 relative overflow-hidden bg-white">
+    <!-- Background Decorative Elements -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-teal-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 -z-10"></div>
+
     <div class="container mx-auto px-6">
         <!-- Section Header -->
-        <div class="text-center mb-16 reveal-on-scroll">
-            <span class="text-teal-600 font-bold tracking-widest uppercase text-xs">Our Medical Team</span>
-            <h2 class="text-4xl md:text-5xl font-serif font-bold text-navy-900 mt-4 mb-6">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+            <span class="inline-block py-1 px-3 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-bold tracking-widest uppercase mb-4">
+                Our Medical Team
+            </span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-navy-900 mb-6">
                 Meet Our Specialists
             </h2>
-            <p class="text-slate-600 max-w-2xl mx-auto text-lg">
-                Experienced consultants dedicated to advanced urology and personalized men's health care.
+            <p class="text-lg text-slate-500 leading-relaxed">
+                Our consultants are leaders in their fields, dedicated to advanced urology, nephrology, and comprehensive men's health care with a patient-first approach.
             </p>
         </div>
 
-        <!-- Doctors Grid - Medical Director stands out first -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
-            <!-- Medical Director - Larger & More Prominent -->
-            <div class="space-y-8">
-                <h3 class="text-center md:text-left text-3xl md:text-4xl font-serif font-bold text-navy-900">
-                    Medical Director
-                </h3>
-
-                <div class="group relative bg-slate-50 rounded-2xl overflow-hidden reveal-on-scroll shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="aspect-[4/5] overflow-hidden">
-                        <img 
-                            src="images/doctor1.jpeg" 
-                            alt="Dr. Obiatuegwu Kenenna" 
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        >
-                    </div>
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/95 via-navy-900/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 md:p-10">
-                        <h4 class="text-white font-serif font-bold text-3xl md:text-4xl mb-2">
-                            Dr. Obiatuegwu Kenenna
-                        </h4>
-                        <p class="text-teal-300 text-lg font-medium mb-4">
-                            MBBS, FWACS, FICS, FIMC<br>
-                            Medical Director & Consultant Urological and Kidney Transplant Surgeon
-                        </p>
-                        <p class="text-slate-200 text-base leading-relaxed opacity-95">
-                            As the medical director, Dr Obiatuegwu Kenenna brings pioneering experience in andrology and all forms of male sexual dysfunction including implants surgeries, kidney transplantation, endourology and laser surgeries.
-                        </p>
+        <!-- Doctors Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto items-start">
+            
+            <!-- CARD 1: Medical Director (Featured) -->
+            <article class="group relative bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden reveal border border-transparent hover:border-teal-100">
+                
+                <!-- Image Area with Badge -->
+                <div class="card-image-container h-[400px] w-full relative">
+                    <img 
+                        src="images/doctor1.jpeg" 
+                        alt="Dr. Obiatuegwu Kenenna" 
+                        class="card-image w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    >
+                    <!-- Role Badge -->
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-teal-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm border border-teal-50">
+                        Medical Director
                     </div>
                 </div>
-            </div>
 
-            <!-- Consultant Specialist -->
-            <div class="space-y-8">
-                <h3 class="text-center md:text-left text-2xl md:text-3xl font-serif font-bold text-navy-900">
-                    Consultant Urologist
-                </h3>
-
-                <div class="group relative bg-slate-50 rounded-2xl overflow-hidden reveal-on-scroll shadow-xl">
-                    <div class="aspect-[4/5] overflow-hidden">
-                        <img 
-                            src="images/doctor2.jpeg" 
-                            alt="Dr. Lovely Fidelis" 
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        >
+                <!-- Content Area -->
+                <div class="p-8">
+                    <h3 class="font-serif text-2xl font-bold text-navy-900 mb-2 group-hover:text-teal-700 transition-colors">
+                        Dr. Obiatuegwu Kenenna
+                    </h3>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="h-px bg-slate-200 flex-grow"></div>
+                        <span class="text-teal-600 text-xs font-bold uppercase tracking-wider px-3">Urology</span>
+                        <div class="h-px bg-slate-200 flex-grow"></div>
                     </div>
 
-                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/35 to-transparent opacity-85 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-7 md:p-9">
-                        <h4 class="text-white font-serif font-bold text-2xl md:text-3xl mb-2">
-                            Dr. Lovely Fidelis
-                        </h4>
-                        <p class="text-teal-300 text-base font-medium mb-3">
-                            MBBS, PGDIP Urol, FWACS, FACS<br>
-                            Consultant Urologist
-                        </p>
-                        <p class="text-slate-200 text-sm leading-relaxed opacity-90">
-                            Experienced consultant providing comprehensive urological care with special interest in minimally invasive procedures, endourology, and patient-centered treatment approaches.
-                        </p>
-                    </div>
+                    <p class="text-sm font-semibold text-navy-800 mb-1">
+                        MBBS, FWACS, FICS, FIMC
+                    </p>
+                    <p class="text-xs text-slate-500 mb-4 italic">
+                        Consultant Urological and Kidney Transplant Surgeon
+                    </p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        As the medical director, Dr Obiatuegwu Kenenna brings pioneering experience in andrology and all forms of male sexual dysfunction including implants surgeries, kidney transplantation, endourology and laser surgeries.
+                    </p>
+
+                    <a href="#contact" class="inline-flex items-center text-teal-600 font-semibold text-sm hover:text-teal-800 transition group/btn">
+                        Book Consultation 
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition"></i>
+                    </a>
                 </div>
-            </div>
-        </div>
+            </article>
 
-        <!-- Call to Action -->
-        <div class="text-center mt-20">
-            <a href="#contact" class="inline-flex items-center px-10 py-5 bg-teal-600 hover:bg-teal-700 text-white font-medium text-lg rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                Book Your Consultation
-                <i data-feather="arrow-right" class="w-6 h-6 ml-3"></i>
-            </a>
+            <!-- CARD 2: Consultant Urologist -->
+            <article class="group relative bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden reveal delay-100">
+                <div class="card-image-container h-[400px] w-full relative">
+                    <img 
+                        src="images/doctor2.jpeg" 
+                        alt="Dr. Lovely Fidelis" 
+                        class="card-image w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="p-8">
+                    <h3 class="font-serif text-2xl font-bold text-navy-900 mb-2 group-hover:text-teal-700 transition-colors">
+                        Dr. Lovely Fidelis
+                    </h3>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="h-px bg-slate-200 flex-grow"></div>
+                        <span class="text-teal-600 text-xs font-bold uppercase tracking-wider px-3">Urology</span>
+                        <div class="h-px bg-slate-200 flex-grow"></div>
+                    </div>
+
+                    <p class="text-sm font-semibold text-navy-800 mb-1">
+                        MBBS, PGDIP Urol, FWACS, FACS
+                    </p>
+                    <p class="text-xs text-slate-500 mb-4 italic">
+                        Consultant Urologist
+                    </p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                       Experienced consultant providing comprehensive urological care with special interest in minimally invasive procedures, endourology, and patient-centered treatment approaches.
+                    </p>
+
+                    <a href="#contact" class="inline-flex items-center text-teal-600 font-semibold text-sm hover:text-teal-800 transition group/btn">
+                        Book Consultation 
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- CARD 3: Consultant Physician & Transplant Nephrologist -->
+            <article class="group relative bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden reveal delay-200">
+                <div class="card-image-container h-[400px] w-full relative">
+                    <img 
+                        src="images/doctor3.jpeg" 
+                        alt="Dr. Aniede Francis Ernest" 
+                        class="card-image w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    >
+                </div>
+
+                <div class="p-8">
+                    <h3 class="font-serif text-2xl font-bold text-navy-900 mb-2 group-hover:text-teal-700 transition-colors">
+                        Dr. Aniede Francis Ernest
+                    </h3>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="h-px bg-slate-200 flex-grow"></div>
+                        <span class="text-teal-600 text-xs font-bold uppercase tracking-wider px-3">Nephrology</span>
+                        <div class="h-px bg-slate-200 flex-grow"></div>
+                    </div>
+
+                    <p class="text-sm font-semibold text-navy-800 mb-1">
+                        MBBS, FWACP, FMCP
+                    </p>
+                    <p class="text-xs text-slate-500 mb-4 italic">
+                        Consultant Physician & Transplant Nephrologist
+                    </p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        A renowned and experienced transplant nephrologist with focus on patients with chronic kidney disease undergoing kidney transplantation and oversees the entire process from evaluation to post transplant care.
+                    </p>
+
+                    <a href="#contact" class="inline-flex items-center text-teal-600 font-semibold text-sm hover:text-teal-800 transition group/btn">
+                        Book Consultation 
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition"></i>
+                    </a>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
@@ -505,6 +569,7 @@
 </body>
 
 </html>
+
 
 
 
